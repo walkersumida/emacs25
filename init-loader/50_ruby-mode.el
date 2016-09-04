@@ -29,8 +29,12 @@
       (when (> offset 0) (forward-char offset)))))
 
 ;; rvm
-(require 'rvm)
-(rvm-use-default)
+;;(require 'rvm)
+;;(rvm-use-default)
+
+;; rbenv
+;;(require 'rbenv)
+;;(global-rbenv-mode)
 
 ;; robe
 ;; (autoload 'robe-mode "robe" "Code navigation, documentation lookup and completion for Ruby" t nil)
