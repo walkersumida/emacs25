@@ -15,6 +15,11 @@
 (setq inhibit-startup-message t)
 (setq initial-scratch-message "")
 
+;; jump
+(require 'dumb-jump)
+(dumb-jump-mode t)
+(require 'ctags nil t)
+
 ;; 現在行をハイライト
 (defface hlline-face
   '((((class color)

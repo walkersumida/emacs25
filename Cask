@@ -36,6 +36,10 @@
 (depends-on "highlight-symbol")
 (depends-on "wgrep")
 
+;; jump
+(depends-on "ctags")
+(depends-on "dumb-jump" :git "https://github.com/jacktasia/dumb-jump.git")
+
 ;; Appearance
 (depends-on "color-theme-tango")
 (depends-on "rainbow-delimiters")
