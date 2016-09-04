@@ -33,8 +33,8 @@
 ;;(rvm-use-default)
 
 ;; rbenv
-;;(require 'rbenv)
-;;(global-rbenv-mode)
+(require 'rbenv)
+(global-rbenv-mode)
 
 ;; robe
 ;; (autoload 'robe-mode "robe" "Code navigation, documentation lookup and completion for Ruby" t nil)
