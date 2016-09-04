@@ -84,7 +84,7 @@
 
 ;; 日本語
 (set-fontset-font
- nil 'japanese-jisx0208
+ t 'japanese-jisx0208
  (font-spec :family "Hiragino Kaku Gothic ProN")) ;; font
 
 ;; 半角と全角の比を1:2にしたければ
