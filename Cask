@@ -1,24 +1,45 @@
-;; -*- mode:emacs-lisp -*-
 (source gnu)
 (source melpa)
 (source marmalade)
 
-;; Setup
+;; cask init packages
+(depends-on "bind-key")
 (depends-on "cask")
+(depends-on "dash")
+(depends-on "drag-stuff")
+(depends-on "exec-path-from-shell")
+(depends-on "expand-region")
+(depends-on "f")
+(depends-on "flycheck")
+(depends-on "flycheck-cask")
+(depends-on "htmlize")
+(depends-on "idle-highlight-mode")
+(depends-on "magit")
+(depends-on "multiple-cursors")
+(depends-on "nyan-mode")
+(depends-on "pallet")
+(depends-on "popwin")
+(depends-on "prodigy")
+(depends-on "projectile")
+(depends-on "s")
+(depends-on "smartparens")
+(depends-on "smex")
+(depends-on "use-package")
+(depends-on "web-mode")
+(depends-on "yasnippet")
+
+;; setup
 (depends-on "init-loader")
 
+;; tools
 (depends-on "anzu")
-(depends-on "expand-region")
 (depends-on "highlight-symbol")
-(depends-on "multiple-cursors")
 (depends-on "wgrep")
-(depends-on "exec-path-from-shell")
 
 ;; Appearance
 (depends-on "color-theme-tango")
 (depends-on "rainbow-delimiters")
 (depends-on "rainbow-mode")
-(depends-on "popwin")
 (depends-on "yascroll")
 (depends-on "linum")
 (depends-on "powerline")
@@ -36,8 +57,6 @@
 (depends-on "popup")
 
 ;; Coding
-(depends-on "yasnippet")
-(depends-on "flycheck")
 (depends-on "flycheck-pos-tip")
 (depends-on "flymake")
 (depends-on "flymake-go")
@@ -63,7 +82,6 @@
 
 ;; web
 (depends-on "js2-mode")
-(depends-on "web-mode")
 (depends-on "scss-mode")
 (depends-on "actionscript-mode")
 
@@ -79,6 +97,7 @@
 (depends-on "ruby-block")
 (depends-on "ruby-end")
 (depends-on "rvm")
+(depends-on "rbenv" :git "https://github.com/senny/rbenv.el.git")
 (depends-on "slim-mode")
 (depends-on "haml-mode")
 (depends-on "robe")
@@ -101,7 +120,7 @@
 
 ;; scala
 (depends-on "ensime")
-(depends-on "scala-mode2")
+(depends-on "scala-mode" :git "https://github.com/ensime/emacs-scala-mode.git")
 
 ;; php
 (depends-on "php-mode")
@@ -113,7 +132,7 @@
 ;; elixir
 (depends-on "elixir-mode")
 (depends-on "alchemist")
-(depends-on "ac-alchemist" :git "git@github.com:syohex/emacs-ac-alchemist.git")
+(depends-on "ac-alchemist" :git "https://github.com/syohex/emacs-ac-alchemist.git")
 
 ;; floobits
 (depends-on "floobits")
@@ -135,4 +154,4 @@
 (depends-on "flycheck-rust")
 
 ;; Crystal
-(depends-on "emacs-crystal-mode" :git "git@github.com:jpellerin/emacs-crystal-mode.git")
+(depends-on "emacs-crystal-mode" :git "https://github.com/jpellerin/emacs-crystal-mode.git")
