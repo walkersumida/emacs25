@@ -1,3 +1,3 @@
-(global-set-key "\C-h" 'backward-delete-char)
+(define-key key-translation-map (kbd "C-h") (kbd "<DEL>"))
 (define-key global-map [?¥] [?\\])
 (define-key global-map (kbd "C-z") nil)
