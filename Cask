@@ -109,6 +109,9 @@
 (depends-on "ruby-hash-syntax")
 (depends-on "ruby-refactor")
 
+;; Python
+(depends-on "python-mode")
+
 ;; go
 (depends-on "go-mode")
 (depends-on "go-autocomplete")
