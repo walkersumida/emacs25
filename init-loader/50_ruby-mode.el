@@ -48,8 +48,12 @@
 (add-hook 'robe-mode-hook 'ac-robe-setup)
 
 ;; rubocop
+;; gem install rubocop -v [version]
 (require 'rubocop)
-(add-hook 'ruby-mode-hook 'rubocop-mode)
+(add-hook 'ruby-mode-hook
+          '(lambda ()
+             (setq flycheck-checker 'ruby-rubocop)
+             (flycheck-mode 1)))
 
 ;; rbeautify
 ;; required) gem install rbeautify
