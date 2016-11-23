@@ -111,6 +111,7 @@
 
 ;; Python
 (depends-on "python-mode")
+(depends-on "flymake-python-pyflakes")
 
 ;; go
 (depends-on "go-mode")
