@@ -13,3 +13,5 @@ ido.last
 ensime/
 
 recentf
+
+elpa/*
