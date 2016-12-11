@@ -2,7 +2,7 @@
 ## git clone
 ```
 mkdir ~/.emacs.d
-git clone git@github.com:walkersumida/emacs25.git .
+git clone https://github.com/walkersumida/emacs25.git .
 ```
 
 ## install Emacs
