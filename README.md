@@ -2,6 +2,7 @@
 ## git clone
 ```
 mkdir ~/.emacs.d
+cd ~/.emacs.d
 git clone https://github.com/walkersumida/emacs25.git .
 ```
 
@@ -32,13 +33,6 @@ brew install the_silver_searcher
 ## cask install
 ```
 cask install
-```
-
-## install Pallet
-launch Emacs
-```
-M-x package-install
-pallet
 ```
 
 ## create tag file(ruby)
