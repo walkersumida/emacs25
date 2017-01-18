@@ -149,6 +149,7 @@
 (depends-on "erlang")
 
 ;; git
+(depends-on "git-gutter+")
 (depends-on "magit")
 
 ;; nginx

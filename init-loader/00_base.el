@@ -36,6 +36,9 @@
 (dumb-jump-mode t)
 (require 'ctags nil t)
 
+(require 'git-gutter+)
+(global-git-gutter+-mode t)
+
 ;; 現在行をハイライト
 (defface hlline-face
   '((((class color)
