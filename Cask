@@ -31,6 +31,9 @@
 ;; setup
 (depends-on "init-loader")
 
+;; shell
+(depends-on "multi-term")
+
 ;; tools
 (depends-on "anzu")
 (depends-on "highlight-symbol")
