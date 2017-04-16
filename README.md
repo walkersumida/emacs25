@@ -1,4 +1,5 @@
 # Emacs 25 on macOS
+# Install
 ## git clone
 ```
 mkdir ~/.emacs.d
@@ -30,7 +31,7 @@ source ~/.bash_profile
 brew install the_silver_searcher
 ```
 
-## cask install
+## install packages
 ```
 cask install
 ```
@@ -49,4 +50,20 @@ gem install rubocop -v [version]
 ## install flake8(pyenv)
 ```
 pip install flake8
+```
+
+# Command
+## Database connects (mysql)
+```
+M-x sql-mysql
+```
+
+## Grep (ag)
+```
+C-x g
+```
+
+## Replace (query-replace)
+```
+C-x re
 ```

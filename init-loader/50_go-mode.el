@@ -14,11 +14,11 @@
 (add-hook 'go-mode-hook '(lambda ()
                            (local-set-key (kbd "C-c C-r") 'go-remove-unused-imports)))
 
-(add-hook 'go-mode-hook (lambda ()
-                          (local-set-key (kbd "M-.") 'godef-jump)))
+(add-hook 'go-mode-hook '(lambda ()
+                           (local-set-key (kbd "M-.") 'godef-jump)))
 
-(add-hook 'go-mode-hook (lambda ()
-                          (local-set-key (kbd "C-c C-i") 'go-import-add)))
+(add-hook 'go-mode-hook '(lambda ()
+                           (local-set-key (kbd "C-c C-i") 'go-import-add)))
 
 ;; go-eldoc
 ;; (require 'go-eldoc)
