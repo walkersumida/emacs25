@@ -67,3 +67,25 @@ C-x g
 ```
 C-x re
 ```
+
+## Org mode
+### Section
+`C-i` : Toggle emphasized text
+```
+* Emacs command
+```
+
+### Checbox
+`C-c C-c` : org-toggle-checkbox
+```
+- [ ] item1
+- [X] item2
+```
+
+### Program lang
+`C-c C-c` : org-babel-execute-src-block
+```
+#+begin_src C
+printf("a");
+#+end_src
+```

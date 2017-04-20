@@ -167,3 +167,6 @@
 
 ;; Crystal
 (depends-on "emacs-crystal-mode" :git "https://github.com/jpellerin/emacs-crystal-mode.git")
+
+;; Org
+(depends-on "org")
