@@ -1,5 +1,5 @@
 (require 'expand-region)
 (global-set-key (kbd "C-,") 'er/expand-region)
-(global-set-key (kbd "C-<") 'er/contract-region) ;; リージョンを狭める
-;; transient-mark-modeが nilでは動作しませんので注意
+(global-set-key (kbd "C-<") 'er/contract-region)
+
 (transient-mark-mode t)

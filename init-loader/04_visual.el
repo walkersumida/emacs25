@@ -1,7 +1,6 @@
-;; タブ, 全角スペース, 行末空白表示
-(defface my-face-b-1 '((t (:background "NavajoWhite4"))) nil) ; 全角スペース
-(defface my-face-b-2 '((t (:background "gray10"))) nil) ; タブ
-(defface my-face-u-1 '((t (:background "SteelBlue" :underline t))) nil) ; 行末空白
+(defface my-face-b-1 '((t (:background "NavajoWhite4"))) nil)
+(defface my-face-b-2 '((t (:background "gray10"))) nil)
+(defface my-face-u-1 '((t (:background "SteelBlue" :underline t))) nil)
 (defvar my-face-b-1 'my-face-b-1)
 (defvar my-face-b-2 'my-face-b-2)
 (defvar my-face-u-1 'my-face-u-1)
@@ -16,7 +15,6 @@
 (ad-enable-advice 'font-lock-mode 'before 'my-font-lock-mode)
 (ad-activate 'font-lock-mode)
 
-;; デフォルトのインデント
 (setq-default indent-line-function 'tab-to-tab-stop)
 (setq-default tab-width 2)
 (setq-default tab-stop-list '(2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 52 54 56 58 60

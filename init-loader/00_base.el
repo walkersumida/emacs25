@@ -1,6 +1,6 @@
-;; ツールバーを非表示
+;; hide tool bar
 (tool-bar-mode -1)
-;; メニューバーを非表示
+;; hide menu bar
 (menu-bar-mode -1)
 
 (prefer-coding-system 'utf-8)
@@ -39,7 +39,7 @@
 (require 'git-gutter+)
 (global-git-gutter+-mode t)
 
-;; 現在行をハイライト
+;; current row highlight
 (defface hlline-face
   '((((class color)
       (background dark))
@@ -51,13 +51,12 @@
      ()))
   "*Face used by hl-line.")
 (setq hl-line-face 'hlline-face)
-;; (setq hl-line-face 'underline) ; 下線
+
 (global-hl-line-mode t)
-;; 対応する括弧をハイライト
+;; matching pairs of parentheses
 (show-paren-mode t)
-;; 括弧のハイライトの設定。
 (setq show-paren-style 'mixed)
-;; 選択範囲をハイライト
+;; selection-highlighting
 (setq transient-mark-mode t)
 
 (setq backup-directory-alist
@@ -69,53 +68,43 @@
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
 
-;; スクロールは１行ごとに
 (setq scroll-step 1)
-;;(scroll-bar-mode -1)
 (setq scroll-conservatively 1)
 
 ;; disabled auto-save
 (setq auto-save-mode nil)
 (setq buffer-auto-save-file-name nil)
 
-;; M-x display-splash-screen で表示。
+;; hide startup message
 (setq inhibit-startup-message t)
 
 ;; default text mode
 (setq default-major-mode 'text-mode)
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
 
-;; 自動インデント無効
-;; (electric-indent-mode -1)
 (add-hook 'text-mode-hook '(lambda ()
                              (electric-indent-local-mode -1)))
 (add-hook 'lisp-mode-hook '(lambda ()
                              (electric-indent-local-mode -1)))
 
-;; 自動改行をoffにする
 (setq text-mode-hook 'turn-off-auto-fill)
 
-;; 列数を表示する
 (column-number-mode t)
 
-;; "yes or no" の選択を "y or n" にする
 (fset 'yes-or-no-p 'y-or-n-p)
 
-;; 英語
+;; english
 (set-face-attribute 'default nil
                     :family "Menlo" ;; font
                     )    ;; font size
 
-;; 日本語
+;; japanese
 (set-fontset-font
  t 'japanese-jisx0208
  (font-spec :family "Hiragino Kaku Gothic ProN")) ;; font
 
-;; 半角と全角の比を1:2にしたければ
-;; (setq face-font-rescale-alist
-;;       '((".*Hiragino_Kaku_Gothic_ProN.*" . 1.2)));; Mac用フォント設定
 (add-to-list 'face-font-rescale-alist
              '(".*Hiragino Kaku Gothic ProN.*" . 1.2))
 
-;; 警告音もフラッシュも全て無効(警告音が完全に鳴らなくなるので注意)
+;; turn off ring bell
 (setq ring-bell-function 'ignore)

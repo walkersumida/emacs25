@@ -12,7 +12,7 @@
 (add-to-list 'auto-mode-alist '("Guardfile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.jbuilder$" . ruby-mode))
 
-;; ruby-modeのインデントを改良する
+;; custom indent on ruby-mode
 (setq ruby-deep-indent-paren-style nil)
 (defadvice ruby-indent-line (after unindent-closing-paren activate)
   (let ((column (current-column))
@@ -48,7 +48,7 @@
 (add-hook 'robe-mode-hook 'ac-robe-setup)
 
 ;; rubocop
-;; gem install rubocop -v [version]
+;; required) gem install rubocop -v [version]
 (require 'rubocop)
 (add-hook 'ruby-mode-hook
           '(lambda ()

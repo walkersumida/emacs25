@@ -1,8 +1,6 @@
 (require 'scss-mode)
 (add-to-list 'auto-mode-alist '("\\.scss$" . scss-mode))
 
-;; インデント幅を2にする
-;; コンパイルは compass watchで行うので自動コンパイルをオフ
 (defun scss-custom ()
   "scss-mode-hook"
   (and
