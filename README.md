@@ -89,3 +89,13 @@ C-x re
 printf("a");
 #+end_src
 ```
+
+## Bookmark
+### Set
+`C-x r m` : set a bookmark at the current location
+
+### Jump
+`C-x r b` : jump to a bookmark
+
+### List
+`C-x r l` : list your bookmarks
