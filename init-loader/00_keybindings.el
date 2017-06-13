@@ -5,3 +5,5 @@
 (define-key global-map (kbd "C-x g") 'ag)
 ;; re: replace
 (define-key global-map (kbd "C-x re") 'query-replace)
+;; reload buffer
+(global-set-key "\M-r" 'revert-buffer-no-confirm)
