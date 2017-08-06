@@ -92,7 +92,9 @@ printf("a");
 
 ## Rspec mode
 `C-c , v` : Verify the spec file associated with the current buffer
+
 `C-c , s` : Verify the example or method defined at point
+
 https://github.com/pezra/rspec-mode
 
 ## Bookmark
