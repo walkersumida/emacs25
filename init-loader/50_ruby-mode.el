@@ -76,3 +76,7 @@
 
 ;; refactor-mode
 (add-hook 'ruby-mode-hook 'ruby-refactor-mode-launch)
+
+;; rspec-mode
+(require 'rspec-mode)
+(custom-set-variables '(rspec-use-rake-flag nil))

@@ -90,6 +90,11 @@ printf("a");
 #+end_src
 ```
 
+## Rspec mode
+`C-c , v` : Verify the spec file associated with the current buffer
+`C-c , s` : Verify the example or method defined at point
+https://github.com/pezra/rspec-mode
+
 ## Bookmark
 ### Set
 `C-x r m` : set a bookmark at the current location
